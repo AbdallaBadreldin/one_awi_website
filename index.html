@@ -1,122 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1 awi store links</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #f8f8f8, #ffe6ea);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1 awi store links</title>
 
-        .container {
-            background: white;
-            padding: 30px;
-            max-width: 500px;
-            width: 90%;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            text-align: center;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8f8f8, #ffe6ea);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-        .logo {
-            width: 140px;
-            height: auto;
-            margin-bottom: 15px;
-        }
+.container {
+    background: white;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+}
 
-        h1 {
-            color: #ff2b45;
-            margin-bottom: 10px;
-            font-size: 2.5rem;
-        }
+.logo {
+    width: 140px;
+    margin-bottom: 15px;
+}
 
-        h2 {
-            color: #444;
-            margin-bottom: 25px;
-            font-size: 1.2rem;
-        }
+h1 {
+    color: #ff2b45;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
 
-        ul {
-            text-align: left;
-            padding-left: 25px;
-            color: #333;
-            margin-bottom: 30px;
-            line-height: 1.8;
-        }
+h2 {
+    color: #444;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
 
-        .buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+ul {
+    text-align: left;
+    padding-left: 25px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
 
-        .btn {
-            text-decoration: none;
-            padding: 14px;
-            border-radius: 12px;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            transition: transform 0.2s ease, opacity 0.2s ease;
-        }
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-        .btn:hover {
-            transform: scale(1.05);
-            opacity: 0.9;
-        }
+.btn {
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-        .facebook { background: #1877f2; }
-        .whatsapp { background: #25d366; }
-        .channel { background: #128c7e; }
-        .instagram { 
-            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
-        }
+.facebook { background: #1877f2; }
+.whatsapp { background: #25d366; }
+.channel { background: #128c7e; }
+.instagram {
+    background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+}
 
-        footer {
-            margin-top: 25px;
-            font-size: 14px;
-            color: #666;
-        }
+footer {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
 
-    </style>
+/* Language Buttons */
+.lang-buttons {
+    margin-bottom: 15px;
+}
+
+.lang-buttons button {
+    margin: 3px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #ff2b45;
+    color: white;
+    font-weight: bold;
+}
+</style>
 </head>
+
 <body>
 
-    <div class="container">
-        <img src="https://raw.githubusercontent.com/AbdallaBadreldin/one_awi_website/refs/heads/main/one_awi_logo.png" alt="1 awi Logo" class="logo">
+<div class="container">
 
-        <h1>1 awi</h1>
-        <h2>Your Custom Gift Destination 🎁</h2>
-
-        <ul>
-            <li>Create custom gifts</li>
-            <li>Print mugs</li>
-            <li>Print t-shirts</li>
-            <li>Print caps</li>
-            <li>And more... Contact us and pickup your special gift!</li>
-        </ul>
-
-        <div class="buttons">
-            <a href="https://www.facebook.com/profile.php?id=100068160655381&locale=ar_AR" target="_blank" class="btn facebook">Facebook</a>
-
-            <a href="https://wa.me/201501166734?text=hi" target="_blank" class="btn whatsapp">WhatsApp</a>
-
-            <a href="https://whatsapp.com/channel/0029VbCDtcMEQIaoIqpRVI3A" target="_blank" class="btn channel">WhatsApp Channel</a>
-
-            <a href="https://www.instagram.com/1awi.customs/" target="_blank" class="btn instagram">Instagram</a>
-        </div>
-
-        <footer>
-            Made with ❤️ by 1 awi
-        </footer>
+    <!-- Language Buttons -->
+    <div class="lang-buttons">
+        <button onclick="setLang('en')">English</button>
+        <button onclick="setLang('ar')">العربية</button>
+        <button onclick="setLang('fr')">Le français</button>
     </div>
+
+    <img src="https://raw.githubusercontent.com/AbdallaBadreldin/one_awi_website/refs/heads/main/one_awi_logo.png" class="logo">
+
+    <h1>1 awi</h1>
+    <h2 id="subtitle">Your Custom Gift Destination 🎁</h2>
+
+    <ul>
+        <li id="item1">Create custom gifts</li>
+        <li id="item2">Print mugs</li>
+        <li id="item3">Print t-shirts</li>
+        <li id="item4">Print caps</li>
+        <li id="item5">And more... Contact us and pickup your special gift!</li>
+    </ul>
+
+    <div class="buttons">
+        <a href="https://www.facebook.com/profile.php?id=100068160655381" target="_blank" class="btn facebook" id="facebook">Facebook</a>
+        <a href="https://wa.me/201501166734" target="_blank" class="btn whatsapp" id="whatsapp">WhatsApp</a>
+        <a href="https://whatsapp.com/channel/0029VbCDtcMEQIaoIqpRVI3A" target="_blank" class="btn channel" id="channel">WhatsApp Channel</a>
+        <a href="https://www.instagram.com/1awi.customs/" target="_blank" class="btn instagram" id="instagram">Instagram</a>
+    </div>
+
+    <footer id="footer">
+        Made with ❤️ by 1 awi
+    </footer>
+
+</div>
+
+<script>
+const langData = {
+    en: {
+        subtitle: "Your Custom Gift Destination 🎁",
+        item1: "Create custom gifts",
+        item2: "Print mugs",
+        item3: "Print t-shirts",
+        item4: "Print caps",
+        item5: "And more... Contact us and pickup your special gift!",
+        facebook: "Facebook",
+        whatsapp: "WhatsApp",
+        channel: "WhatsApp Channel",
+        instagram: "Instagram",
+        footer: "Made with ❤️ by 1 awi"
+    },
+    ar: {
+        subtitle: "وجهتك للهدايا المخصصة 🎁",
+        item1: "تصميم هدايا مخصصة",
+        item2: "طباعة مجات",
+        item3: "طباعة تيشيرتات",
+        item4: "طباعة كابات",
+        item5: "والمزيد... تواصل معنا واستلم هديتك!",
+        facebook: "فيسبوك",
+        whatsapp: "واتساب",
+        channel: "قناة واتساب",
+        instagram: "إنستجرام",
+        footer: "صُنع بـ ❤️ بواسطة 1 awi"
+    },
+    fr: {
+        subtitle: "Votre destination de cadeaux personnalisés 🎁",
+        item1: "Créer des cadeaux personnalisés",
+        item2: "Impression sur mugs",
+        item3: "Impression sur t-shirts",
+        item4: "Impression sur casquettes",
+        item5: "Et plus... Contactez-nous et récupérez votre cadeau spécial !",
+        facebook: "Facebook",
+        whatsapp: "WhatsApp",
+        channel: "Chaîne WhatsApp",
+        instagram: "Instagram",
+        footer: "Fait avec ❤️ par 1 awi"
+    }
+};
+
+function setLang(lang) {
+    localStorage.setItem("lang", lang);
+
+    document.getElementById("subtitle").innerText = langData[lang].subtitle;
+    document.getElementById("item1").innerText = langData[lang].item1;
+    document.getElementById("item2").innerText = langData[lang].item2;
+    document.getElementById("item3").innerText = langData[lang].item3;
+    document.getElementById("item4").innerText = langData[lang].item4;
+    document.getElementById("item5").innerText = langData[lang].item5;
+
+    document.getElementById("facebook").innerText = langData[lang].facebook;
+    document.getElementById("whatsapp").innerText = langData[lang].whatsapp;
+    document.getElementById("channel").innerText = langData[lang].channel;
+    document.getElementById("instagram").innerText = langData[lang].instagram;
+
+    document.getElementById("footer").innerText = langData[lang].footer;
+
+    document.body.dir = (lang === "ar") ? "rtl" : "ltr";
+}
+
+window.onload = () => {
+    const saved = localStorage.getItem("lang") || "en";
+    setLang(saved);
+};
+</script>
 
 </body>
 </html>
