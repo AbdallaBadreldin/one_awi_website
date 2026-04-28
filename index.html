@@ -110,7 +110,7 @@ footer {
 
     <img src="https://raw.githubusercontent.com/AbdallaBadreldin/one_awi_website/refs/heads/main/one_awi_logo.png" class="logo">
 
-    <h1>1 awi</h1>
+    <h1 id="title">1 Awi</h1>
     <h2 id="subtitle">Your Custom Gift Destination 🎁</h2>
 
     <ul>
@@ -137,7 +137,8 @@ footer {
 <script>
 const langData = {
     en: {
-        subtitle: "Your Custom Gift Destination 🎁",
+        title: "1 Awi",
+  	subtitle: "Your Custom Gift Destination 🎁",
         item1: "Create custom gifts",
         item2: "Print mugs",
         item3: "Print t-shirts",
@@ -150,6 +151,7 @@ const langData = {
         footer: "Made with ❤️ by One Awi"
     },
     ar: {
+	title: "١ اوى",
         subtitle: "وجهتك للهدايا المخصصة 🎁",
         item1: "تصميم هدايا مخصصة",
         item2: "طباعة مجات",
@@ -163,7 +165,8 @@ const langData = {
         footer: "صُنع بـ ❤️ بواسطة واحد اوى"
     },
     fr: {
-        subtitle: "Votre destination de cadeaux personnalisés 🎁",
+        title: "1 Awi",
+	subtitle: "Votre destination de cadeaux personnalisés 🎁",
         item1: "Créer des cadeaux personnalisés",
         item2: "Impression sur mugs",
         item3: "Impression sur t-shirts",
@@ -180,6 +183,7 @@ const langData = {
 function setLang(lang) {
     localStorage.setItem("lang", lang);
 
+    document.getElementById("title").innerText = langData[lang].title;
     document.getElementById("subtitle").innerText = langData[lang].subtitle;
     document.getElementById("item1").innerText = langData[lang].item1;
     document.getElementById("item2").innerText = langData[lang].item2;
